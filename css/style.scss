@@ -1,1 +1,137 @@
+// ****SASS****
+// ****ALL****
+body {
+    margin: 0;
+    background: #eee;
+    font-family: Open Sans, Open Serif;
+    font-size: 1.1rem;
+    line-height: 2.0rem;
+}
 
+header {
+    width: 100%;
+    background-image: url('../image/header.jpg');
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+// ****HEADER****
+.header-container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.accessibility-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e2f7ff;
+    padding: 12px 0;
+
+    div {
+        display: flex;
+        align-items: center;
+        p {
+            margin: 0;
+        }
+    }
+    .list-inline {
+        margin: auto 0;
+
+        .list-inline-item {
+            p {
+                margin-bottom: 0 !important;
+            }
+            a {
+                color: #3e7b9a;
+            }
+        }
+    }
+}
+
+.mid-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+
+    .logo-search {
+        display: flex;
+        width: 85%;
+
+        .brand-area {
+            display: flex;
+            width: 35%;
+            .img-box {
+                width: 15%;
+                display: flex;
+            }
+
+            .brand-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-family: Raleway;
+                p {
+                    margin: 0;
+                    color: #fff;
+                }
+                p:nth-child(1) {
+                    font-size: 2.0rem;
+                }
+                p:nth-child(2) {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .search-area {
+            width: 65%;
+            margin: auto;
+
+            .search-container {
+                width: 100%;
+                background-color: #69bddd;
+                border: 2px solid #fff;
+                border-radius: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                form {
+                    display: flex;
+                    width: 95%;
+
+                    .search-box {
+
+                        .search-bar {
+                            border: none;
+                            background: transparent;
+                        }
+                        ::placeholder {
+                            color: #fff;
+                            opacity: 0.7;
+                            font-size: 0.8rem;
+                        }
+                    }
+                    p {
+                        margin: auto;
+                        color: #fff;
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+
+    .user-area {
+        margin: auto;
+        display: flex;
+
+        .user-box {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

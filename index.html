@@ -2,87 +2,125 @@
 <html lang="fr">
 
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+    </style>
     <meta charset="UTF-8">
     <title>HiTech.net</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
+
 <body>
     <header>
 
-        <div>
-            <div>
-                <p>Options d'affichage / accessibilité</p>
+        <div class="header-container">
+
+            <div class="accessibility-container">
+                <div>
+                    <p>Options d'affichage / accessibilité</p>
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <p>Thème :</p>
+                    </li>
+                    <li class="list-inline-item"><a href="">sombre</a></li>
+                    <li class="list-inline-item"><a href="">contrasté</a></li>
+                    <li class="list-inline-item"><a href="">clair</a></li>
+                </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <p>Interlignage :</p>
+                    </li>
+                    <li class="list-inline-item"><a href="">simple</a></li>
+                    <li class="list-inline-item"><a href="">augmenté</a></li>
+                </ul>
             </div>
-            <div>
-                <p>Thème :</p>
-                <a href="">sombre</a>
-                <a href="">contrasté</a>
-                <a href="">clair</a>
+
+            <div class="mid-header">
+
+                <div class="logo-search">
+
+                    <div class="brand-area">
+                        <div class="img-box"><img class="img-fluid" src="image/logo.svg" alt="logo HiTech"></div>
+                        <div class="brand-text">
+                            <p>HiTech.NET</p>
+                            <p>Tout le matériel High-Tech</p>
+                        </div>
+                    </div>
+
+                    <div class="search-area">
+                        <div class="search-container">
+                            <form method="get">
+                                <div class="search-box">
+                                    <label for="product-search"></label>
+                                    <input type="search" placeholder="Chercher un produit, une marque..." name="product-search" id="product-search" class="search-bar" />
+                                </div>
+                                <p>❯❯❯</p>
+                                <div>
+                                    <label for="product-category"></label>
+                                    <select name="product-category" id="product-category">
+                                        <option value="all-shelves">Tous les rayons...</option>
+                                        <option value="computers">Ordinateurs</option>
+                                        <option value="devices">Péripheriques & composants</option>
+                                        <option value="phones">Téléphones</option>
+                                        <option value="connected">Objets connectés</option>
+                                    </select>
+                                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="user-area">
+                    <div class="user-box">
+                        <i class="fa-regular fa-user"></i>
+                        <a href="">Mon compte</a>
+                    </div>
+                    <div class="user-box">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="">Mon panier</a>
+                    </div>
+                </div>
+
             </div>
+
             <div>
-                <p>Interlignage :</p>
-                <a href="">simple</a>
-                <a href="">augmenté</a>
+                <nav>
+                    <div>
+                        <i class="fa-solid fa-computer"></i>
+                        <a href="">Ordinateurs</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <a href="">Péripheriques & composants</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <a href="">Téléphones</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-stopwatch"></i>
+                        <a href="">Objets connectés</a>
+                    </div>
+                </nav>
             </div>
+
         </div>
 
-        <div>
-            <div>
-                <img src="image/logo.svg" alt="logo HiTech">
-                <p>HiTech.NET</p>
-                <p>Tout le matériel High-Tech</p>
-            </div>
-
-            <div>
-                <form method="get">
-                    <div>
-                        <label for="product-search"></label>
-                        <input type="search" name="product-search" id="product-search" />
-                    </div>
-                    <div>
-                        <i class="fa-regular fa-arrow-right"></i>
-                    </div>
-                    <div>
-                        <label for="product-category"></label>
-                        <select name="product-category" id="product-category">
-                        <option value="all-shelves">Tous les rayons...</option>
-                        <option value="computers">Ordinateurs</option>
-                        <option value="devices">Péripheriques & composants</option>
-                        <option value="phones">Téléphones</option>
-                        <option value="connected">Objets connectés</option>
-                        </select>
-                    </div>
-                    <div>
-                        <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
-                    </div>
-                </form>
-            </div>
-
-            <div>
-                <div>
-                    <i class="fa-thin fa-user"></i>
-                    <a href="">Mon compte</a>
-                </div>
-                <div>
-                    <i class="fa-thin fa-cart-shopping"></i>
-                    <a href="">Mon panier</a>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <nav>
-                <div>
-                    <i class="fa-thin fa-computer"></i>
-                    <a href="">Ordibnateru</a>
-                </div>
-            </nav>
-        </div>
     </header>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js" />
+    <link rel="stylesheet" href="js/bootstrap.min.js" />
 </body>
 
 </html>
