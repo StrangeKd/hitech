@@ -16,16 +16,14 @@ a {
 .line-bloc {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%; }
   .line-bloc h2 {
     padding-left: 15px;
-    font-size: 2.4rem;
-    width: 20%; }
+    font-size: 2.4rem; }
   .line-bloc .dotted-line {
     margin: 0 15px;
     padding-bottom: 10px;
-    width: 70%;
+    width: inherit;
     border-top: 8px dotted #eeeeee; }
 
 .header-container {
@@ -187,57 +185,57 @@ a {
     .labels-container .label-item p {
       margin: 0; }
 
-.product-block {
+.product-bloc {
   display: flex; }
-  .product-block .img-area {
+  .product-bloc .img-area {
     display: flex;
     flex-direction: column; }
-    .product-block .img-area .carousel {
+    .product-bloc .img-area .carousel {
       margin: 15px; }
-    .product-block .img-area .all-img-container {
+    .product-bloc .img-area .all-img-container {
       text-align: center; }
-      .product-block .img-area .all-img-container .all-img {
+      .product-bloc .img-area .all-img-container .all-img {
         display: flex;
         justify-content: center; }
-        .product-block .img-area .all-img-container .all-img .img-screen {
+        .product-bloc .img-area .all-img-container .all-img .img-screen {
           width: 50px;
           height: auto;
           margin: 10px; }
-  .product-block .product-description {
+  .product-bloc .product-description {
     width: 135%;
     margin: 20px; }
-    .product-block .product-description .marque-block {
+    .product-bloc .product-description .marque-bloc {
       display: flex; }
-      .product-block .product-description .marque-block .img-box {
+      .product-bloc .product-description .marque-bloc .img-box {
         width: 15%; }
-        .product-block .product-description .marque-block .img-box .logo-aoc {
+        .product-bloc .product-description .marque-bloc .img-box .logo-aoc {
           width: 85%; }
-    .product-block .product-description .buy-block {
+    .product-bloc .product-description .buy-bloc {
       display: flex;
       flex-direction: column; }
-      .product-block .product-description .buy-block .price-area {
+      .product-bloc .product-description .buy-bloc .price-area {
         display: flex;
         justify-content: space-between;
         background: #eee; }
-        .product-block .product-description .buy-block .price-area .price-text {
+        .product-bloc .product-description .buy-bloc .price-area .price-text {
           text-align: center;
           color: #545454;
           margin: auto; }
-          .product-block .product-description .buy-block .price-area .price-text p:nth-child(1) {
+          .product-bloc .product-description .buy-bloc .price-area .price-text p:nth-child(1) {
             font-size: 2.4rem;
             margin: 0;
             font-weight: bold;
             margin-top: 10px; }
-          .product-block .product-description .buy-block .price-area .price-text p:nth-child(2) {
+          .product-bloc .product-description .buy-bloc .price-area .price-text p:nth-child(2) {
             font-size: 14px;
             margin: 0;
             margin-top: 15px; }
-        .product-block .product-description .buy-block .price-area .button-block {
+        .product-bloc .product-description .buy-bloc .price-area .button-bloc {
           display: flex;
           flex-direction: column;
           justify-content: center;
           margin: 15px; }
-          .product-block .product-description .buy-block .price-area .button-block .add-button1 {
+          .product-bloc .product-description .buy-bloc .price-area .button-bloc .add-button1 {
             height: 60px;
             width: 230px;
             border: none;
@@ -245,7 +243,7 @@ a {
             color: #fff;
             font-size: 20px;
             font-weight: bold; }
-          .product-block .product-description .buy-block .price-area .button-block .add-button2 {
+          .product-bloc .product-description .buy-bloc .price-area .button-bloc .add-button2 {
             height: 50px;
             width: 230px;
             border: none;
@@ -253,14 +251,48 @@ a {
             color: #236587;
             font-size: 15px;
             font-weight: bold; }
-      .product-block .product-description .buy-block .garanty-block {
+      .product-bloc .product-description .buy-bloc .garanty-bloc {
         background: #d6d6d6;
         text-align: center; }
-        .product-block .product-description .buy-block .garanty-block p {
+        .product-bloc .product-description .buy-bloc .garanty-bloc p {
           margin: 20px auto; }
-    .product-block .product-description .description-area {
+    .product-bloc .product-description .description-area {
       margin-top: 20px;
       font-size: 15px;
       line-height: 24px; }
+
+.product-descriptif .line-bloc {
+  margin-top: 25px; }
+  .product-descriptif .line-bloc .h2size {
+    font-size: 1.6rem; }
+.product-descriptif .article1 {
+  margin-top: 40px; }
+.product-descriptif .descriptif-container {
+  margin: 15px;
+  display: flex; }
+  .product-descriptif .descriptif-container .border-img {
+    width: 250%;
+    padding: 10px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1); }
+  .product-descriptif .descriptif-container .text-container {
+    margin-right: 20px; }
+    .product-descriptif .descriptif-container .text-container p {
+      font-size: 15px;
+      line-height: 24px; }
+  .product-descriptif .descriptif-container .text-container:nth-child(even) {
+    margin-left: 20px; }
+
+.product-perks {
+  margin-top: 25px; }
+  .product-perks .perks-container {
+    margin: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .product-perks .perks-container table {
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      width: 600px; }
+      .product-perks .perks-container table td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=style.css.map */

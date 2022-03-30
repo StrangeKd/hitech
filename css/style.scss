@@ -25,17 +25,15 @@ a {
 .line-bloc {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
     h2 {
         padding-left: 15px;
         font-size: 2.4rem;
-        width: 20%;
     }
     .dotted-line {
         margin: 0 15px;
         padding-bottom: 10px;
-        width: 70%;
+        width: inherit;
         border-top: 8px dotted #eeeeee;
     }
 }
@@ -274,7 +272,7 @@ a {
     }
 }
 
-.product-block {
+.product-bloc {
     display: flex;
 
     .img-area {
@@ -302,7 +300,7 @@ a {
         width: 135%;
         margin: 20px;
 
-        .marque-block {
+        .marque-bloc {
             display: flex;
             .img-box {
                 width: 15%;
@@ -312,7 +310,7 @@ a {
             }
         }
 
-        .buy-block {
+        .buy-bloc {
             display: flex;
             flex-direction: column;
             .price-area {
@@ -335,7 +333,7 @@ a {
                         margin-top: 15px;
                     }
                 }
-                .button-block {
+                .button-bloc {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -360,7 +358,7 @@ a {
                     }
                 }
             }
-            .garanty-block {
+            .garanty-bloc {
                 background: #d6d6d6;
                 text-align: center;
                 p {
@@ -373,6 +371,56 @@ a {
             margin-top: 20px;
             font-size: 15px;
             line-height: 24px;
+        }
+    }
+}
+
+.product-descriptif {
+    .line-bloc {
+        margin-top: 25px;
+        .h2size {
+            font-size: 1.6rem;
+        }
+    }
+
+    .article1 {
+        margin-top: 40px;
+    }
+
+    .descriptif-container {
+        margin: 15px;
+        display: flex;
+        .border-img {
+            width: 250%;
+            padding: 10px 40px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .text-container {
+            margin-right: 20px;
+            p {
+                font-size: 15px;
+                line-height: 24px;
+            }
+        }
+        .text-container:nth-child(even) {
+            margin-left: 20px;
+        }
+    }
+}
+
+.product-perks {
+    margin-top: 25px;
+    .perks-container {
+        margin: 15px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        table {
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            width: 600px;
+            td {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
         }
     }
 }
