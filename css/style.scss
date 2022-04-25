@@ -207,13 +207,16 @@ a {
 
 .nav-area {
     background-color: #e2f7ff;
-    padding: 10px 0;
 
     .nav-bar {
         display: flex;
         justify-content: space-around;
 
-        div {
+        .menu-box {
+            margin: auto;
+            padding: 10px 0;
+            width: 23%;
+            text-align: center;
             i {
                 color: #236587;
             }
@@ -225,6 +228,15 @@ a {
     }
 }
 
+// .menu-box:hover {
+//     background-color: #fff;
+//     i:hover {
+//         color: black;
+//     }
+//     a:hover {
+//         color: black;
+//     }
+// }
 // *********************MAIN*************************
 .main-container {
     max-width: 1140px;
@@ -537,6 +549,7 @@ a {
                 .logo {
                     font-size: 2rem;
                     margin: 10px 15px;
+                    cursor: pointer;
                 }
                 .fb {
                     color: #6c6c6c;
@@ -549,6 +562,9 @@ a {
                 }
                 .linkdn {
                     color: #616161;
+                }
+                .logo:hover {
+                    color: #d33e5b;
                 }
             }
         }
@@ -583,4 +599,32 @@ a {
 .footer-title {
     margin: 20px auto;
     font-size: 2em;
+}
+
+
+@media screen and (max-width: 960px) {
+
+    //*********HEADER************
+    .brand-area {
+        flex-direction: column;
+        .img-box {
+            width: initial;
+            justify-content: center;
+            padding-bottom: 7px;
+        }
+    }
+
+    .search-area {
+        display: none;
+    }
+
+    .nav-bar {
+        flex-wrap: wrap;
+        .menu-box {
+            width: 45%!important;
+        }
+    } //*********MAIN************
+    .entete {
+        display: none;
+    }
 }
