@@ -1,0 +1,21 @@
+{
+    "folders": [
+        {
+            "path": "Code/3WA/integration/hi_tech/css"
+        }
+    ],
+    "settings": {
+        "liveSassCompile.settings.formats":[
+            {
+                "format": "expanded",
+                "extensionName": ".css",
+                "savePath": "/css"
+            }
+        ],
+        "liveSassCompile.settings.generateMap": false,
+        "liveSassCompile.settings.autoprefix": [
+            "> 1%",
+            "last 2 versions"
+        ]
+    }
+}

@@ -85,11 +85,11 @@ a {
 
     .logo-search {
         display: flex;
-        width: 80%;
+        width: 825px;
 
         .brand-area {
             display: flex;
-            width: 35%;
+            width: 40%;
             .img-box {
                 width: 19%;
                 display: flex;
@@ -116,7 +116,7 @@ a {
 
         .search-area {
             margin: auto;
-            width: 60%;
+            margin-left: 45px;
 
             .search-container {
                 background-color: #69bddd;
@@ -132,9 +132,9 @@ a {
                     padding: 0 15px;
 
                     .search-bar {
+                        width: 230px;
                         border: none;
                         background: transparent;
-                        width: 47%;
                         font-size: 0.8rem;
                     }
                     ::placeholder {
@@ -151,6 +151,7 @@ a {
                 }
 
                 .category-bar {
+                    width: 140px;
                     background: transparent;
                     border: none;
                     font-size: 0.8rem;
@@ -160,7 +161,7 @@ a {
                     -moz-appearance: none;
                     text-indent: 1px;
                     text-overflow: '';
-                    width: 30%;
+                    text-align: center;
                     padding: 0 10px;
                     option {
                         color: black;
@@ -185,14 +186,13 @@ a {
 }
 
 .user-area {
-    margin: auto;
+    margin: auto 0;
     display: flex;
-    width: 25%;
 
     .user-box {
         display: flex;
         flex-direction: column;
-        margin: 0 25px;
+        margin: 0 15px;
         i {
             margin: auto;
             color: #fff;
@@ -201,6 +201,7 @@ a {
         a {
             color: #fff;
             font-size: 14px;
+            text-align: center;
         }
     }
 }
@@ -278,8 +279,6 @@ a {
         }
     }
 }
-
-.product-presentation {}
 
 .tags {
     margin-left: 3%;
@@ -605,10 +604,15 @@ a {
 @media screen and (max-width: 960px) {
 
     //*********HEADER************
+    .brand-text{
+        text-align: center;
+    }
+    
     .brand-area {
         flex-direction: column;
+        width: initial;
         .img-box {
-            width: initial;
+            width: 100%;
             justify-content: center;
             padding-bottom: 7px;
         }
@@ -616,6 +620,10 @@ a {
 
     .search-area {
         display: none;
+    }
+
+    .user-area {
+
     }
 
     .nav-bar {
@@ -626,5 +634,32 @@ a {
     } //*********MAIN************
     .entete {
         display: none;
+    }
+
+    .product-bloc {
+        flex-direction: column;
+
+        .all-img-container {
+            p {
+                font-size: 14px;
+            }
+        }
+        .product-description {
+            width: 95%;
+            margin: 25px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .column-reverse{
+        flex-direction: column-reverse;
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+    .border-img{
+        width: fit-content;
     }
 }
