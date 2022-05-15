@@ -1,0 +1,101 @@
+
+.footer-bg {
+    background-image: url('../image/footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 55%;
+    color: #fff;
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    a {
+        color: #fff;
+        line-height: 1.7rem;
+        text-decoration: underline;
+    }
+    .footer-grid {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "payment socials" "about about2" "copyright copyright";
+
+        .payment {
+            grid-area: payment;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 75%;
+                height: auto;
+            }
+        }
+        .socials {
+            grid-area: socials;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .logo-container {
+                .logo {
+                    font-size: 2rem;
+                    margin: 10px 15px;
+                    cursor: pointer;
+                }
+                .fb {
+                    color: #6c6c6c;
+                }
+                .insta {
+                    color: #646464
+                }
+                .twit {
+                    color: #8b8b8b;
+                }
+                .linkdn {
+                    color: #616161;
+                }
+                .logo:hover {
+                    color: #d33e5b;
+                }
+            }
+        }
+        .about {
+            grid-area: about;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about2 {
+            grid-area: about2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .copyright {
+            padding-top: 65px;
+            grid-area: copyright;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    }
+}
+
+.footer-title {
+    margin: 20px auto;
+    font-size: 2em;
+}
