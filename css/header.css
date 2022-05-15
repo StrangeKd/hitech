@@ -125,7 +125,8 @@
 }
 
 .mid-header .logo-search .search-area .search-container form .search-bar {
-  width: 230px;
+  padding: 5px;
+  width: 235px;
   border: none;
   background: transparent;
   font-size: 0.8rem;
@@ -162,6 +163,7 @@
 }
 
 .mid-header .logo-search .search-area .search-container .category-bar {
+  padding: 5px;
   width: 140px;
   background: transparent;
   border: none;
