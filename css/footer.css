@@ -1,0 +1,177 @@
+.footer-bg {
+  background-image: url("../image/footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 55%;
+  color: #fff;
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-container a {
+  color: #fff;
+  line-height: 1.7rem;
+  text-decoration: underline;
+}
+
+.footer-container .footer-grid {
+  padding-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 0px;
+  grid-auto-flow: row;
+      grid-template-areas: "payment socials" "about about2" "copyright copyright";
+}
+
+.footer-container .footer-grid .payment {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: payment;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-container .footer-grid .payment img {
+  width: 75%;
+  height: auto;
+}
+
+.footer-container .footer-grid .socials {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: socials;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-container .footer-grid .socials .logo-container .logo {
+  font-size: 2rem;
+  margin: 10px 15px;
+  cursor: pointer;
+}
+
+.footer-container .footer-grid .socials .logo-container .fb {
+  color: #6c6c6c;
+}
+
+.footer-container .footer-grid .socials .logo-container .insta {
+  color: #646464;
+}
+
+.footer-container .footer-grid .socials .logo-container .twit {
+  color: #8b8b8b;
+}
+
+.footer-container .footer-grid .socials .logo-container .linkdn {
+  color: #616161;
+}
+
+.footer-container .footer-grid .socials .logo-container .logo:hover {
+  color: #d33e5b;
+}
+
+.footer-container .footer-grid .about {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: about;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-container .footer-grid .about2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: about2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-container .footer-grid .copyright {
+  padding-top: 65px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: copyright;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.footer-title {
+  margin: 20px auto;
+  font-size: 2em;
+}
+/*# sourceMappingURL=footer.css.map */

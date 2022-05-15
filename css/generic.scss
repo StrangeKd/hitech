@@ -1,0 +1,19 @@
+.underline {
+    text-decoration: underline;
+}
+
+.line-bloc {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    h2 {
+        padding-left: 15px;
+        font-size: 2.4rem;
+    }
+    .dotted-line {
+        margin: 0 15px;
+        padding-bottom: 10px;
+        width: inherit;
+        border-top: 8px dotted #eeeeee;
+    }
+}
